@@ -2,20 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,11 +16,47 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  width: 100%;
+  border-top: 2px solid black;
+}
+
+.watch {
+  position: relative;
+}
+
+.watch_H,
+.watch_M,
+.watch_S {
+  position: absolute;
+  left: calc(50% - 200px);
+  /* transition: transform ease-in-out 0.1s; */
+}
+
+button {
+  margin: 12px 0 10px 0;
+}
+
+main {
+  margin-bottom: 100px;
+}
+
+.phonebook {
+
+
+  div {
+    button {
+      margin: 0;
+    }
   }
-  to {
-    transform: rotate(360deg);
+
+  button {
+    margin-top: 16px;
   }
+}
+
+
+button:hover {
+  background-color: #595e67;
+  cursor: pointer;
 }
